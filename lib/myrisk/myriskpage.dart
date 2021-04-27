@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
+// import 'package:location/location.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MyRiskPage extends StatelessWidget {
@@ -23,16 +24,19 @@ class _MapViewState extends State<MapView> {
   CameraPosition _initialLocation = CameraPosition(target: LatLng(0.0, 0.0));
   GoogleMapController mapController;
 
-  // current location
+  // ignore: unused_field
   final Geolocator _geolocator = Geolocator();
+
   Position _currentPosition;
 
+  // current location
+  // ignore: unused_element
   _getCurrentLocation() async {
     await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high)
         .then((Position position) async {
       setState(() {
         _currentPosition = position;
-        print('current pos: $_currentPosition');
+        print('CURRENT POS: $_currentPosition');
         mapController.animateCamera(
           CameraUpdate.newCameraPosition(
             CameraPosition(
@@ -42,6 +46,7 @@ class _MapViewState extends State<MapView> {
           ),
         );
       });
+      // await _getAddress();
     }).catchError((e) {
       print(e);
     });
