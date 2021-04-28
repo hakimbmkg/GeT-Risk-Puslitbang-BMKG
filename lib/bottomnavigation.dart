@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:kegiatan_rekayasa_litbanggeo/eqinfo/eqinfopage.dart';
 import 'package:kegiatan_rekayasa_litbanggeo/myrisk/myriskpage.dart';
 import 'package:kegiatan_rekayasa_litbanggeo/about/aboutpage.dart';
-import 'package:kegiatan_rekayasa_litbanggeo/wherewego/wherewego.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -29,8 +29,8 @@ class _BottomNavPageState extends State<BottomNavPage> {
   Widget build(BuildContext context) {
     final _listPage = <Widget>[
       MyRiskPage(),
+      EqInfoPage(),
       AboutPage(),
-      WhereWeGoPage(),
     ];
     //
     final _bottomNavBarItems = <BottomNavigationBarItem>[
@@ -39,8 +39,8 @@ class _BottomNavPageState extends State<BottomNavPage> {
         title: Text('Myrisk'),
       ),
       BottomNavigationBarItem(
-        icon: Icon(Icons.assistant_direction),
-        title: Text('WhereWeGo'),
+        icon: Icon(Icons.fiber_smart_record_rounded),
+        title: Text('EarthQuake'),
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.error_outlined),
@@ -51,7 +51,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
     final _bottomNavBar = BottomNavigationBar(
       items: _bottomNavBarItems,
       currentIndex: _selectedTabIndex,
-      selectedItemColor: Colors.blueAccent,
+      selectedItemColor: Colors.blue,
       unselectedItemColor: Colors.grey,
       onTap: _onNavBarTapped,
     );

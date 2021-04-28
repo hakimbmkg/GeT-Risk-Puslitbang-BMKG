@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
-class WhereWeGoPage extends StatelessWidget {
+class EqInfoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'GeT - Risk Puslitbang',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          title: Text('Earthquake Information'),
+        ),
         body: Center(
-          child: Text('Where you go, ..'),
+          child: Text('About Pake'),
         ),
       ),
     );

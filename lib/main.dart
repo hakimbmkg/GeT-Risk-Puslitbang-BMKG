@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: title,
         theme: ThemeData(primaryColor: Colors.white),
         home: SplashScreenPage(),
