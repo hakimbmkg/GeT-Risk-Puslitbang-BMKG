@@ -35,6 +35,9 @@ dependencies:
   geocoding: ^2.0.0
   geojson: ^0.10.0
   cached_network_image: ^3.0.0
+  xml2json: ^5.1.0
+  we_slide: ^2.1.0
+  
 
 dev_dependencies:
   flutter_test:

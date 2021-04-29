@@ -40,11 +40,11 @@ class _BottomNavPageState extends State<BottomNavPage> {
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.fiber_smart_record_rounded),
-        title: Text('EarthQuake'),
+        title: Text('GeT Info'),
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.error_outlined),
-        title: Text('About'),
+        title: Text('Tentang'),
       ),
     ];
     //
