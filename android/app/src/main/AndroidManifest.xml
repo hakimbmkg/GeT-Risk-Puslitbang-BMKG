@@ -9,7 +9,7 @@
         android:icon="@mipmap/ic_launcher">
 
         <meta-data android:name="com.google.android.geo.API_KEY"
-           android:value="AIzaSyBcG04qB_f2akCHHW_NI9cpdcAKZW-IHXI"/>
+           android:value="sengaja dikosongkan"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
